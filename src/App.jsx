@@ -19,7 +19,7 @@ function App() {
   return (
     <div>
       <form>
-        <h1>CSS Rock-Paper-Scissors</h1>
+        <h1>Rock Paper Scissors</h1>
         <RadioInputs options={options} />
 
         <div>
