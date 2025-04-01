@@ -1,4 +1,3 @@
-
 const Hand = ({ type, player }) => {
   return (
     <div className={`hand ${player} ${type || ""}`}>
@@ -13,4 +12,5 @@ const Hand = ({ type, player }) => {
     </div>
   );
 }
+
 export default Hand;
