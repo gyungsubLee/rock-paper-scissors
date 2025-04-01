@@ -1,6 +1,6 @@
 
 <div align="center">
-  <img src="img/logo2.png" width="200px"/>
+  <img src="img/logo2.png" width="150px"/>
 </div>
 
 <h1 align="center">Rock Paper Scissors</h1>
@@ -15,10 +15,9 @@
     <p><strong>기간: 25.04.01 (화)</strong></p></p>
 </div>
 
-
-
-![화면](./img/rcp.gif)
-
+<div align="center">
+  <img src="./img/rcp.gif" width="500px"/>
+</div>
 
 <br/>
 
