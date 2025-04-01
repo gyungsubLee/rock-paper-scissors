@@ -1,14 +1,16 @@
-// Hand.jsx
-const Hand = ({ id, className }) => (
-  <div className={`hand ${className}`} id={id}>
-    <div className="fist"></div>
-    <div className="finger finger-1"></div>
-    <div className="finger finger-2"></div>
-    <div className="finger finger-3"></div>
-    <div className="finger finger-4"></div>
-    <div className="thumb"></div>
-    <div className="arm"></div>
-  </div>
-)
 
+const Hand = ({ type, player }) => {
+  return (
+    <div className={`hand ${player} ${type || ""}`}>
+      {/* 여기서 CSS 클래스 조합으로 손모양 표현 */}
+      <div className="fist" />
+      <div className="finger finger-1" />
+      <div className="finger finger-2" />
+      <div className="finger finger-3" />
+      <div className="finger finger-4" />
+      <div className="thumb" />
+      <div className="arm" />
+    </div>
+  );
+}
 export default Hand;
