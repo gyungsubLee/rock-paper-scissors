@@ -12,7 +12,7 @@
 
 <div align="center">
     <h4>리액트 스터디 과제 1: 가위 바위 보 </h4>
-    <p><strong>기간: 25.04.01 (화)</strong></p></p>
+    <p><strong>기간: 25.04.01 ~ 02</strong></p></p>
 </div>
 
 <div align="center">
