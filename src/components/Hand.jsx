@@ -66,6 +66,7 @@ const HandWrapper = styled.div`
 
 const Fist = styled.div`
   height: 55%;
+  min-height: 90px;
   left: 20%;
   top: 25%;
   bottom: 25%;
@@ -84,32 +85,28 @@ const Finger = styled.div`
 `;
 
 const paperFingerStyle = css`
-  left: 124px;
+  left: 95px;
   width: 80px;
   border-left: 0;
   border-radius: 0 20px 20px 0;
 `;
 
+const scissorsFingerStyle = (rotateDeg) => css`
+  width: 80%;
+  max-width: 130px;
+  transform: rotate(${rotateDeg}deg);
+`;
+
 const Finger1 = styled(Finger)`
   top: 25%;
-  ${({ type }) =>
-    type === "scissors" &&
-    css`
-      width: 130px;
-      transform: rotate(-5deg);
-    `}
+  ${({ type }) => type === "scissors" && scissorsFingerStyle(-5)}
   ${({ type }) => type === "paper" && paperFingerStyle}
 `;
 
 const Finger2 = styled(Finger)`
   top: 39%;
   left: 84px;
-  ${({ type }) =>
-    type === "scissors" &&
-    css`
-      width: 130px;
-      transform: rotate(5deg);
-    `}
+  ${({ type }) => type === "scissors" && scissorsFingerStyle(5)}
   ${({ type }) => type === "paper" && paperFingerStyle}
 `;
 
@@ -140,7 +137,7 @@ const Arm = styled.div`
   width: 22px;
   height: 70px;
   left: 20px;
-  top: 35%;
+  top: 32%;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
 `;
