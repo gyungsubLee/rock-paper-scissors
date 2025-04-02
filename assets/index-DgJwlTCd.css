@@ -1,0 +1,1 @@
+@keyframes handShake{0%,to{transform:rotate(10deg)}50%{transform:rotate(-10deg)}}@keyframes handShake2{0%,to{transform:rotateY(180deg) rotate(10deg)}50%{transform:rotateY(180deg) rotate(-10deg)}}body{font-family:Arial,sans-serif;margin:0;padding:0;background:#f9f9f9;display:flex;align-items:center;justify-content:center;flex-direction:column;height:100vh}
