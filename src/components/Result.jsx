@@ -2,11 +2,24 @@
 import styled from "styled-components";
 
 const Result = ({ result, reset }) => {
+  const getColor = (result) => {
+    switch (result) {
+      case "You Win!":
+        return "#4caf50";
+      case "You Tied!":
+        return "#333";
+      default:
+        return "#f44336";
+    }
+  };
+
   return (
     <ResultWrapper>
       {result && (
         <>
-          <ResultTitle>{result}</ResultTitle>
+          <ResultTitle style={{ color: getColor(result) }}>
+            {result}
+          </ResultTitle>
           <RefreshWrapper>
             <RefreshButton onClick={reset} $visible={!!result}>
               Refresh Round
