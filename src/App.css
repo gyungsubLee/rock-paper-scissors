@@ -141,12 +141,12 @@ h1 {
 }
 
 .result {
-  min-height: 100px; /* 충분히 공간 확보 */
+  min-height: 100px;
   text-align: center;
 }
 
 .refresh-wrapper {
-  height: 40px; /* 버튼 높이만큼 고정 */
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;

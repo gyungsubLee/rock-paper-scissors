@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./App.css"; // 아래의 CSS를 복사해서 App.css로 저장하세요
+import "./App.css";
 
 const choices = ["rock", "paper", "scissors"];
 
@@ -62,20 +62,6 @@ export default function App() {
           </button>
         </div>
       </div>
-    </div>
-  );
-}
-
-function Hand({ type, player }) {
-  return (
-    <div className={`hand ${player} ${type || ""}`}>
-      <div className="fist" />
-      <div className="finger finger-1" />
-      <div className="finger finger-2" />
-      <div className="finger finger-3" />
-      <div className="finger finger-4" />
-      <div className="thumb" />
-      <div className="arm" />
     </div>
   );
 }
